@@ -20,9 +20,11 @@ This script has only been validated with a stereo (2.0) configuration because I'
 
 0. Create a speaker profile using SoundID Reference Measure
 0. Load the speaker profile to SoundID Reference using any output device
-0. Select your target mode and Dry/Wet ratio (these configuration will be baked in)
+0. Select your target mode and dry/wet ratio (these configuration will be baked in)
 0. On the left sidebar, click on the "…" menu -> Export -> Dolby Atoms Renderer
 0. Save the exported profile to your desired location (by default in `%AppData%\Sonarworks\SoundID Reference\Sonarworks Projects\Exported Presets`)
 0. Run the converter: `python3 convert.py <exported-profile.txt> <config.txt>`
 0. Put the generated file to `%ProgramFiles%\EqualizerAPO\config\config.txt`
 0. Profit
+
+If you have multiple audio devices with EqualizerAPO APO enabled, you need to add a `Device: ` line to the generated configuration file to make the configuration apply to the correct device. The line can be copied from the Configurator app with the "Copy Device command to clipboard" button.
