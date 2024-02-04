@@ -12,11 +12,14 @@ Sometimes SoundID Reference does not work with your output device or a specific 
 
 ## Application Notes
 
-WARNING: Although we try to clamp the total gain, this script might still generate unexpected high gain values. **Please check the generated configuration file before applying it to your system**, otherwise it might permanently damage your ear or your audio equipment. I'm not responsible for any damage caused by using this script.
+**WARNING**: Although we try to clamp the total gain, this script might still generate unexpected high gain values. **Please check the generated configuration file before applying it to your system**, otherwise it might permanently damage your ear or your audio equipment. I'm not responsible for any damage caused by using this script.
 
 This script has only been validated with a stereo (2.0) configuration because I'm poor. If you have a multi-channel setup, please send me an exported profile so I can test and fix the script.
 
-Builtin headphone profiles are not supported. You must use a speaker profile.
+Known limitations:
+
+- Builtin headphone profiles are not supported, you must use a speaker profile
+- Precision is limited to 27 bands per channel, and might be further limited by your software and output device
 
 ## Usage
 
