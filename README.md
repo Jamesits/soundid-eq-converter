@@ -16,6 +16,8 @@ WARNING: Although we try to clamp the total gain, this script might still genera
 
 This script has only been validated with a stereo (2.0) configuration because I'm poor. If you have a multi-channel setup, please send me an exported profile so I can test and fix the script.
 
+Builtin headphone profiles are not supported. You must use a speaker profile.
+
 ## Usage
 
 0. Create a speaker profile using SoundID Reference Measure
@@ -27,4 +29,4 @@ This script has only been validated with a stereo (2.0) configuration because I'
 0. Put the generated file to `%ProgramFiles%\EqualizerAPO\config\config.txt`
 0. Profit
 
-If you have multiple audio devices with EqualizerAPO APO enabled, you need to add a `Device: ` line to the generated configuration file to make the configuration apply to the correct device. The line can be copied from the Configurator app with the "Copy Device command to clipboard" button.
+If you have multiple audio devices with EqualizerAPO APO enabled, you need to add a `Device:` line to the generated configuration file to make the configuration apply to the correct device. The line can be copied from the Configurator app with the "Copy Device command to clipboard" button.
